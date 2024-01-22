@@ -33,7 +33,7 @@ h2{
     font-size: 1.75rem;
 }
 
-#input-note{
+#inputNote{
     position: relative;
     width: 100%;
     border: none;
@@ -41,4 +41,71 @@ h2{
     outline: none;
     padding: 15px 0px;
     font-size: 1rem;
+}
+
+.box li{
+    position: relative;
+    width: calc(100% - 40px);
+    align-items: center;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px 10px 10px 45px;
+    min-height: 45px;
+    cursor: pointer;
+}
+
+.box li i{
+    position: absolute;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7350c5;
+    border-radius: 10%;
+}
+
+.box li i::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.box li i::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+
+.box li::before{
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    background: #abbd10;
+    border-radius: 10%;
+}
+
+.box li .done{
+    background-color: #b79ff0;
+}
+
+.box li .done::after{
+    content: '';
+    position: absolute;
+    left: 16px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(315deg);
 }
