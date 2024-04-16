@@ -53,7 +53,7 @@ h1{
 .content-add-item{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
